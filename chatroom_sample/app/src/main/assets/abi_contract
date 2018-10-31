@@ -1,0 +1,91 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "hash",
+				"type": "string"
+			}
+		],
+		"name": "uploadMessage",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "companionAddress",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "blockNumberLog",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "canJoinRoom",
+		"outputs": [
+			{
+				"name": "value",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "blockNum",
+				"type": "uint256"
+			}
+		],
+		"name": "getCompanionMessages",
+		"outputs": [
+			{
+				"name": "savedMessages",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "blockNum",
+				"type": "uint256"
+			}
+		],
+		"name": "haveCompanionMessages",
+		"outputs": [
+			{
+				"name": "value",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

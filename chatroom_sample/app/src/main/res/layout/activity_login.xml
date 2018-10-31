@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lytRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/AuthTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvError"
+            style="@style/AuthErrorTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_incorrect_login_and_pass"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <View
+            android:id="@+id/vBgLogin"
+            style="@style/TextInputBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/etLogin"
+            app:layout_constraintEnd_toEndOf="@+id/etLogin"
+            app:layout_constraintStart_toStartOf="@+id/etLogin"
+            app:layout_constraintTop_toTopOf="@+id/etLogin" />
+
+        <EditText
+            android:id="@+id/etLogin"
+            style="@style/AuthTextInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="9dp"
+            android:hint="@string/hint_login"
+            android:inputType="textEmailAddress"
+            android:text="dariatest2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <View
+            android:id="@+id/vBgPassword"
+            style="@style/TextInputBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/etPassword"
+            app:layout_constraintTop_toTopOf="@+id/etPassword" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/AuthTextInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.5dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:text="P5HyvBoQJQKXmcJw5CAK8UkzwFMLK3DAecniAHH7BM6Ci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLogin" />
+
+        <TextView
+            android:id="@+id/tvEnter"
+            style="@style/PositiveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/inter"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/etPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            style="@style/RegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="0dp"
+            android:text="@string/q_have_not_account"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvEntire"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEnter" />
+
+        <TextView
+            android:id="@+id/tvEntire"
+            style="@style/HelpTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/register"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvQuestion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvQuestion" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

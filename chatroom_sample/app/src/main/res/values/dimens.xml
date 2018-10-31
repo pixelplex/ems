@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="searchHorizontalMargin">16dp</dimen>
+    <dimen name="searchVerticalMargin">8dp</dimen>
+    <dimen name="search_image_weight">113dp</dimen>
+    <dimen name="search_image_height">102.5dp</dimen>
+    <dimen name="searchBackStartMargin">8dp</dimen>
+    <dimen name="searchBackEndMargin">-24dp</dimen>
+
+    <dimen name="textSize">17sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="textInputTopPadding">17dp</dimen>
+    <dimen name="textInputBottomPadding">16dp</dimen>
+    <dimen name="textInputHorizontalPadding">17dp</dimen>
+    <dimen name="textInputHorizontalMargin">27.5dp</dimen>
+
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_huge">30dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+
+    <dimen name="textInputAuthTopPadding">13dp</dimen>
+    <dimen name="textInputAuthBottomPadding">12dp</dimen>
+    <dimen name="textInputAuthHorizontalPadding">10dp</dimen>
+
+    <dimen name="textInputSettingsHorizontalPadding">16dp</dimen>
+    <dimen name="textInputSettingsVerticalPadding">16dp</dimen>
+    <dimen name="textInputSettingsHorizontalMargin">17dp</dimen>
+
+    <dimen name="customChildLayoutInputsHeight">140dp</dimen>
+
+    <dimen name="toastTopMargin">57dp</dimen>
+    <dimen name="toastBottomMargin">58dp</dimen>
+    <dimen name="toastHorizontalMargin">10dp</dimen>
+
+    <dimen name="photoHeightPostDetails">226dp</dimen>
+    <dimen name="toolbarHeight">44dp</dimen>
+
+    <dimen name="bottomMargin">70dp</dimen>
+    <dimen name="bottomMarginSmall">20dp</dimen>
+    <dimen name="bottomNavigationHeight">50dp</dimen>
+    <dimen name="bottomLargeMargin">120dp</dimen>
+    <dimen name="bottomMarginSettings">93dp</dimen>
+
+    <dimen name="rangeSelectorSize">8dp</dimen>
+    <dimen name="loaderSize">40dp</dimen>
+
+    <dimen name="tabProfileHeight">42dp</dimen>
+
+    <dimen name="errorLayoutRadius">6dp</dimen>
+    <dimen name="contactsLayoutHeight">50dp</dimen>
+    <dimen name="contactsLayoutHeightSmall">20dp</dimen>
+
+    <dimen name="dividerMarginStart">16dp</dimen>
+    <dimen name="dividerMarginEnd">0dp</dimen>
+    <dimen name="verticalDividerHeight">5dp</dimen>
+    <dimen name="horizontalDividerWidth">5dp</dimen>
+
+    <dimen name="retry_action_width">42dp</dimen>
+    <dimen name="retry_action_height">42dp</dimen>
+    <dimen name="retry_progress_action_width">36dp</dimen>
+    <dimen name="retry_progress_action_height">36dp</dimen>
+    <dimen name="error_snackbar_bottom_margin">50dp</dimen>
+    <dimen name="error_snackbar_horizantal_margin">20dp</dimen>
+
+    <!--Join room-->
+    <dimen name="join_room_label_padding_horizontal">20dp</dimen>
+    <dimen name="join_room_label_padding_vertical">40dp</dimen>
+    <dimen name="scan_qrcode_icon_padding">15dp</dimen>
+
+</resources>

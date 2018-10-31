@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:text="@string/join_to_room"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_back" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvContractIdLabel"
+                    style="@style/LabelStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/join_room_label_padding_horizontal"
+                    android:layout_marginTop="@dimen/join_room_label_padding_vertical"
+                    android:layout_marginEnd="@dimen/join_room_label_padding_horizontal"
+                    android:text="@string/contract_id_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/etContractId"
+                    style="@style/InputStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contract_id_hint"
+                    app:layout_constraintEnd_toStartOf="@+id/ivScanQrCode"
+                    app:layout_constraintStart_toStartOf="@id/tvContractIdLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/tvContractIdLabel" />
+
+                <TextView
+                    android:id="@+id/tvRoomNameLabel"
+                    style="@style/LabelStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/join_room_label_padding_horizontal"
+                    android:layout_marginTop="@dimen/join_room_label_padding_vertical"
+                    android:layout_marginEnd="@dimen/join_room_label_padding_horizontal"
+                    android:text="@string/room_name_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etContractId" />
+
+                <EditText
+                    android:id="@+id/etRoomName"
+                    style="@style/InputStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ivScanQrCode"
+                    app:layout_constraintStart_toStartOf="@id/tvRoomNameLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRoomNameLabel" />
+
+                <TextView
+                    android:id="@+id/tvCompanionNameLabel"
+                    style="@style/LabelStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/join_room_label_padding_horizontal"
+                    android:layout_marginTop="@dimen/join_room_label_padding_vertical"
+                    android:layout_marginEnd="@dimen/join_room_label_padding_horizontal"
+                    android:text="@string/companion_id_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etRoomName" />
+
+                <EditText
+                    android:id="@+id/etCompanionName"
+                    style="@style/InputStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ivScanQrCode"
+                    app:layout_constraintStart_toStartOf="@id/tvCompanionNameLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCompanionNameLabel" />
+
+                <ImageView
+                    android:id="@+id/ivScanQrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:paddingStart="@dimen/scan_qrcode_icon_padding"
+                    android:paddingEnd="@dimen/scan_qrcode_icon_padding"
+                    android:src="@drawable/ic_scan_qr_code"
+                    app:layout_constraintBottom_toBottomOf="@+id/etContractId"
+                    app:layout_constraintEnd_toEndOf="@id/tvContractIdLabel"
+                    app:layout_constraintTop_toTopOf="@+id/etContractId" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    style="@style/ErrorStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    tools:text="Something went wrong"
+                    app:layout_constraintStart_toStartOf="@id/tvCompanionNameLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/etCompanionName" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/PositiveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/join_room_label_padding_horizontal"
+                    android:layout_marginBottom="@dimen/join_room_label_padding_horizontal"
+                    android:text="@string/submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvError" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

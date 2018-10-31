@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">ChatRoom</string>
+
+
+    <!--auth screen starts-->
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="inter">Login</string>
+    <string name="auth_confirm">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="hint_repeat_password">Repeat password</string>
+    <string name="q_forgot_password">Forgot password?</string>
+    <string name="q_have_account">Already have account?</string>
+    <string name="q_have_not_account">Have no account?</string>
+    <string name="register">Register</string>
+    <string name="entire">Enter</string>
+    <!--auth screen ends-->
+
+    <string name="name_or_id_for_chat">Companion name or id</string>
+    <string name="room_name">Room name</string>
+    <string name="create_own_room">Create own room</string>
+    <string name="join_to_room">Join to room</string>
+    <string name="add_room">Add room</string>
+    <string name="submit">Submit</string>
+    <string name="contract_id">Contract ID:</string>
+    <string name="copied">Copied!</string>
+    <string name="your_name">Your account name:</string>
+    <string name="contract_id_hint">1.16.x</string>
+
+    <!--errors-->
+    <string name="error_input_login_and_pass">Enter login and password</string>
+    <string name="error_incorrect_login_and_pass">Wrong login or password</string>
+    <string name="error_user_with_such_name_exists">User with same login already registered</string>
+    <string name="error_field_is_required">All fields are required!</string>
+    <string name="error_something_wrong">Something went wrong</string>
+    <string name="error_account_not_found">Account not found</string>
+    <string name="error_join_error">Can\'t join to room</string>
+    <string name="error_contract_join_error">Wrong contract id</string>
+    <string name="error_no_camera_permission">No camera permission!</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="error_create_room">Can\'t create room</string>
+    <string name="ok">Ok</string>
+    <string name="message_hint">Message</string>
+    <string name="message_uploading_error">Error during message uploading</string>
+
+    <!--common-->
+    <string name="connection_failure">Connection failure</string>
+    <string name="please_wait">Please, wait</string>
+
+    <!--Main-->
+    <string name="participantsLabelPattern">Participants: %1$s and %2$s</string>
+
+    <!--Join room-->
+    <string name="contract_id_label">Contract id for join</string>
+    <string name="room_name_label">Room name</string>
+    <string name="companion_id_label">Companion name or id</string>
+    <string name="title_scan_qr_code">Scan qr code</string>
+    <string name="rooms_screen_title">Rooms</string>
+    <string name="delete_room_error">Error occurred during room deleting</string>
+    <string name="fetch_rooms_error">Error occurred during rooms fetching</string>
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="wrong_qrcode_data_error">Wrong QR code data</string>
+
+
+</resources>

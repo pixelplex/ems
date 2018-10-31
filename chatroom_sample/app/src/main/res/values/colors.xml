@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5087f6</color>
+    <color name="colorPrimaryDark">#5087f6</color>
+    <color name="colorAccent">#5087f6</color>
+
+    <color name="colorBackgroundDark">#f7f7f7</color>
+    <color name="colorBackground">#f1f1f1</color>
+    <color name="colorPrimaryRipple">@color/colorBlack30Opacity</color>
+
+    <color name="tabItemColor">#c6c6c6</color>
+    <color name="tabActiveItemColor">#5087f6</color>
+    <color name="tabBackgroundColor">#e6f7f7f7</color>
+
+    <color name="colorGray">#f1f1f1</color>
+    <color name="colorDarkGrayDivider">#c7c7cc</color>
+
+    <color name="searchBackgroundColor">#fcdf5f</color>
+    <color name="searchBackgroundTextColor">#66ffffff</color>
+    <color name="searchItemColor">#7f353535</color>
+    <color name="searchDividerColor">#4de5c743</color>
+
+    <color name="colorTextLoader">@color/colorHint</color>
+    <color name="colorLoader">#e15087f6</color>
+    <color name="colorDarkLoader">#6a717d</color>
+    <color name="colorDarkYellow">#c9ad30</color>
+
+    <color name="colorTextTitle">#353535</color>
+    <color name="colorTextSecondary">#7b7b7b</color>
+    <color name="colorError">#eb4b3d</color>
+    <color name="colorHint">#40000000</color>
+    <color name="colorTextInputCornerSelected">@color/colorAccent80Opacity</color>
+    <color name="colorTextInputCornerUnselected">#ccf0f0f0</color>
+    <color name="colorTextInputCornerDarkUnselected">#e1e1e1</color>
+    <color name="colorTextInputSolidDarkUnselected">#ebebeb</color>
+    <color name="colorPositive">#ff5087f6</color>
+
+    <color name="colorPostDate">@color/colorBlack30Opacity</color>
+    <color name="colorPostPrice">@color/colorBlack90Opacity</color>
+    <color name="colorPostBorder">#ccf0f0f0</color>
+
+    <color name="colorRadioBorder">#e1e1e1</color>
+    <color name="colorSeekBarBackground">#d6d6d6</color>
+
+    <color name="colorBlack10Opacity">#1a000000</color>
+    <color name="colorBlack25Opacity">#40000000</color>
+    <color name="colorBlack30Opacity">#4d000000</color>
+    <color name="colorBlack50Opacity">#7f000000</color>
+    <color name="colorBlack60Opacity">#99000000</color>
+    <color name="colorBlack70Opacity">#b3000000</color>
+    <color name="colorBlack80Opacity">#cc000000</color>
+    <color name="colorBlack90Opacity">#e6000000</color>
+    <color name="colorWhite96Opacity">#f5ffffff</color>
+    <color name="colorPrimary96Opacity">#f55087f6</color>
+    <color name="colorAccent80Opacity">#cc5087f6</color>
+    <color name="colorTitle40Opacity">#66353535</color>
+    <color name="colorTitle50Opacity">#7f353535</color>
+    <color name="colorTitle58Opacity">#94353535</color>
+    <color name="colorTitle80Opacity">#cc353535</color>
+
+    <color name="colorCurrency">#7f7f7f</color>
+    <color name="colorFavorite">#f68250</color>
+    <color name="colorTransparentBlack">#00000000</color>
+
+</resources>

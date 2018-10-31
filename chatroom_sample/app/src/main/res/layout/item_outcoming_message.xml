@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:fontFamily="@font/geometria_medium"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintStart_toStartOf="@id/lytContentContainer"
+        tool:text="dimas:" />
+
+    <LinearLayout
+        android:id="@+id/lytContentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outcoming_message_content_background"
+        android:gravity="end"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="30dp"
+        android:paddingTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOwnerName">
+
+        <TextView
+            android:id="@+id/outcomingContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="@dimen/text_size_medium"
+            android:fontFamily="@font/geometria_normal"
+            tool:text="Text" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
