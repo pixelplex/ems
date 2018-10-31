@@ -22,4 +22,4 @@
 
 ### ChatRoom - smart contracts with Echo Android Framework
 
-[Code](ChatRoom)
+[Code](chatroom_sample)
