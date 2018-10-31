@@ -14,8 +14,6 @@
 
 [Documentation](https://echoprotocol.github.io/echo-ios-framework/)
 
-[Example](EchoCons)
-
 ### Echo Android Framework
 
 [GitHub](https://github.com/echoprotocol/echo-android-framework)
